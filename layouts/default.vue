@@ -47,9 +47,7 @@ onBeforeUnmount(() => {
 
             <div class="lg:order-3">
                 <a href="https://wa.me/+5585997249761" target="_blank">
-                    <button type="button"
-                        class="px-4 py-2 mr-1 text-sm font-medium text-center text-white bg-black border border-black rounded-lg lg:px-4 hover:bg-transparent hover:text-gray-400 hover:border hover:border-black transition ease-in-out duration-300 lg:mr-0">
-                    Compre Agora</button>
+                    <Button>Compre Agora</Button>
                 </a>
             </div>
 
