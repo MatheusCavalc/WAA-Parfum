@@ -46,7 +46,7 @@ onBeforeUnmount(() => {
             </NuxtLink>
 
             <div class="lg:order-3">
-                <a href="https://wa.me/+5585997249761" target="_blank">
+                <a href="https://wa.me/+55859" target="_blank">
                     <Button>Compre Agora</Button>
                 </a>
             </div>
@@ -68,27 +68,27 @@ onBeforeUnmount(() => {
                 id="navbar-default">
                 <ul :class="{ 'bg-black': isNavbarOpaque, '': !isNavbarOpaque }"
                     class="flex flex-col transition duration-700 ease-in-out p-4 mt-4 font-medium border border-gray-100 rounded-lg lg:p-0 lg:flex-row lg:space-x-14 lg:mt-0 lg:border-0 lg:bg-transparent">
-                    <NuxtLink to="/">
+                    <a href="#Sobre">
                         <li>
                             <button class="block py-2 pl-3 pr-4 rounded lg:border-0 lg:py-5 text-white">
                                 Sobre
                             </button>
                         </li>
-                    </NuxtLink>
-                    <NuxtLink to="/">
+                    </a>
+                    <a href="#Produtos">
                         <li>
                             <button class="block py-2 pl-3 pr-4 rounded lg:border-0 lg:py-5 text-white">
                                 Produtos
                             </button>
                         </li>
-                    </NuxtLink>
-                    <NuxtLink to="/">
+                    </a>
+                    <a href="#Contato">
                         <li>
                             <button class="block py-2 pl-3 pr-4 rounded lg:border-0 lg:py-5 text-white">
                                 Contato
                             </button>
                         </li>
-                    </NuxtLink>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -97,6 +97,32 @@ onBeforeUnmount(() => {
     <div>
         <slot />
     </div>
+
+    <footer class="bg-black shadow">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="../assets/logo-nobg.png" class="h-20" alt="WAA Parfum Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">WAA Parfum</span>
+                </a>
+                <ul
+                    class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0">
+                    <li>
+                        <a href="#Sobre" class="hover:underline me-4 md:me-6">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#Produtos" class="hover:underline me-4 md:me-6">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="#Contato" class="hover:underline me-4 md:me-6">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center">© 2024 <a
+                    href="/" class="hover:underline">WAA Parfum™</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
 </template>
 
 <style>
