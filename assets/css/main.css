@@ -1,0 +1,11 @@
+.bg-home {
+    background-image: url('../home.jpeg');
+}
+
+.bg-footer {
+    background-image: linear-gradient(#000000, #9233ea81), url('../footer.jpeg');
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}

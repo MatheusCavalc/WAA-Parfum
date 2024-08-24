@@ -1,7 +1,7 @@
 <template>
     <Title>WAA Parfum</Title>
     <NuxtLayout>
-        <div class="min-h-screen bg-black text-white bg-home bg-center">
+        <div class="min-h-screen bg-black text-white bg-home bg-center bg-cover bg-no-repeat">
             <div class="bg-gradient-to-b from-[#000000a4] to-[#000000a4] min-h-screen">
                 <div class="flex flex-col lg:flex-row justify-center lg:justify-evenly items-center h-screen">
                     <div class="order-2 lg:order-1 text-center">
@@ -61,7 +61,7 @@
 
         <div>
             <a id="Contato" />
-            <section class="h-1/3 md:h-4/5 bg-footer py-20">
+            <section class="h-1/3 md:h-4/5 bg-footer bg-center bg-cover bg-no-repeat py-20">
                 <div class="py-40 mx-4 md:mx-20">
                     <div class="flex justify-center">
                         <p class="text-2xl md:text-2xl font-playfair lg:text-4xl font-bold text-center text-white">
@@ -82,21 +82,3 @@
         </div>
     </NuxtLayout>
 </template>
-
-<style scoped>
-.bg-home {
-    background-image: url('../assets/home.jpeg');
-}
-
-.bg-footer {
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    background-image: linear-gradient(#000000, #9233ea81), url('../assets/footer.jpeg');
-    background-repeat: no-repeat;
-}
-
-.font-playfair {
-    font-family: 'Playfair Display', serif;
-}
-</style>
